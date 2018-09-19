@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{248FDA96-693C-A2DE-62B6-2DFF3C34A504}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Billboard.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Beretta 93R/Read_me.txt">
     <Files>
-      <File FileName="Assets/PlayerController.cs" Line="61" Column="31" />
-      <File FileName="Assets/Bullet.cs" Line="16" Column="19" />
-      <File FileName="Assets/Health.cs" Line="20" Column="10" />
+      <File FileName="Assets/PlayerController.cs" Line="23" Column="9" />
+      <File FileName="Assets/Bullet.cs" Line="16" Column="28" />
+      <File FileName="Assets/Health.cs" Line="38" Column="6" />
       <File FileName="Assets/Billboard.cs" Line="22" Column="1" />
+      <File FileName="Assets/EnemySpawner.cs" Line="13" Column="8" />
+      <File FileName="Assets/Beretta 93R/Read_me.txt" Line="20" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

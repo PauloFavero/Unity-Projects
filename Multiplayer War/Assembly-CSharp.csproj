@@ -63,20 +63,22 @@
   <ItemGroup>
     <Compile Include="Assets\Billboard.cs" />
     <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\Health.cs" />
     <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\teste.cs" />
+    <None Include="Assets\3D Models\Props\Weapons\Ammunition\ReadMe.txt" />
+    <None Include="Assets\Beretta 93R\Read_me.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/paulohenriquefaveropereira/Desktop/Multiplayer War/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/paulohenriquefaveropereira/Desktop/Multiplayer War/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/paulohenriquefaveropereira/Desktop/Multiplayer War/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/paulohenriquefaveropereira/Desktop/Multiplayer War/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

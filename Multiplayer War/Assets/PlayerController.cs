@@ -46,6 +46,7 @@ public class PlayerController : NetworkBehaviour {
         GetComponent<MeshRenderer>().material.color = Color.blue;
     }
 
+    [Command]
     void CmdFire()
     {
         //Create the bullet grom the bullet prefab

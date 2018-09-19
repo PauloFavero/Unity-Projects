@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 223811758563182614}
   - component: {fileID: 114703180758875174}
   - component: {fileID: 114410766960924984}
+  - component: {fileID: 114514896944623286}
   m_Layer: 5
   m_Name: Healthbar Canvas
   m_TagString: Untagged
@@ -405,6 +406,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114514896944623286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672670256053860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05742ee433f214614a110920b6cc1363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 20173233575281774, guid: 534f3f96e7d1c46eab3dc8e8141bd845,
+    type: 2}
 --- !u!114 &114541039218596502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,6 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 224013949107337050}
+  destroyOnDeath: 0
   currentHealth: 100
 --- !u!114 &114597288166071660
 MonoBehaviour:
@@ -550,7 +565,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 20173233575281774, guid: 534f3f96e7d1c46eab3dc8e8141bd845, type: 2}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -586,7 +601,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1400189914660836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -133}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224013949107337050}
@@ -595,7 +610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1352, y: -762}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224869830760162690

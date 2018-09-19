@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-
+    public Camera mainCamera;
     // Use this for initialization
     void Start()
     {
@@ -15,7 +15,7 @@ public class Billboard : MonoBehaviour
     void Update()
     {
 
-        transform.LookAt(Camera.main.transform);
+        transform.LookAt(mainCamera.transform);
 
     }
 }
