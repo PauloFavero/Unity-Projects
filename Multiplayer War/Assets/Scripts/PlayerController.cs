@@ -8,17 +8,19 @@ public class PlayerController : NetworkBehaviour {
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
+
     [SyncVar]
     public string playerName;
+
     public LoadSceneOnClick sceneManager;
 
-    int mainMenu = 0;
+
 
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,17 +28,17 @@ public class PlayerController : NetworkBehaviour {
 
         if (isLocalPlayer)
         {
+            //Fire 
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 CmdFire();
             }
-
+            //Pause Game
             if (Input.GetKeyDown(KeyCode.P))
             {
                 Application.LoadLevel("mainMenuScene");
             }
-
-
+        
             var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
             var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
 

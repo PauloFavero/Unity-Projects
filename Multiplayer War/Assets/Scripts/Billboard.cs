@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Billboard : MonoBehaviour
+public class BillboardThirdPerson : MonoBehaviour
 {
-    public Camera mainCamera;
-    // Use this for initialization
+    public Camera thirdPersonCamera;
     void Start()
     {
 
@@ -14,8 +13,7 @@ public class Billboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.LookAt(mainCamera.transform);
+        transform.LookAt(thirdPersonCamera.transform);
 
     }
 }

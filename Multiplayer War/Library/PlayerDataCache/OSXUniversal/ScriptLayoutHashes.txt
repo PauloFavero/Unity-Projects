@@ -121,7 +121,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 d22c788799ee45d8676254eccf20e8b8 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 350002622c79e1481e16ac72897d455c Assembly-CSharp.dll:.TiltWindow
-848010c81a455efc414ba06cc7d73c4a Assembly-CSharp.dll:.Billboard
+3820b56ee9c4f24d83c9c2558741a420 Assembly-CSharp.dll:.Billboard
 d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 486cd95c82d8305219c352c06b776e1f UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -186,3 +186,6 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ApplicationManager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ChangeColor
 cf90713cb54fab8f94440a23a0327a01 Assembly-CSharp.dll:.Health
+3820b56ee9c4f24d83c9c2558741a420 Assembly-CSharp.dll:.CameraPlayerController
+552aa97e81ba32370acc474e0860e207 Assembly-CSharp.dll:.BillboardFirstPerson
+7139e08a7e3b30060c4b8f2771c5d52e Assembly-CSharp.dll:.BillboardThirdPerson
