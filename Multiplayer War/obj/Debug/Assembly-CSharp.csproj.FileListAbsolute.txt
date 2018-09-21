@@ -500,3 +500,6 @@
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Unity.IvyParser.dll.mdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.csproj.CopyComplete
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.dll.mdb
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.xml

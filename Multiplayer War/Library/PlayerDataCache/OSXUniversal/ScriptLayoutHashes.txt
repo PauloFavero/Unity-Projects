@@ -1,7 +1,9 @@
 OSXStandalone
 PlayerPath?
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Build_healthBar.app
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Build_menu.app
 SceneListBegin?
+Assets/mainMenuScene.unity
+Assets/Scenes/Controls.unity
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -141,7 +143,7 @@ da21fc3f8056b1f91c3dd09c7bf4f90a UnityEngine.Networking.dll:UnityEngine.Networki
 529a95e9e8e7686c4816e08fbb37183f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 7ca56e063bd071986fff4f513cc4f477 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-af11e9943a0774998d3b61d34dc6355f Assembly-CSharp.dll:.PlayerController
+ee2d0014fdfed61c85a632155becb7a3 Assembly-CSharp.dll:.PlayerController
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 e53cc67d84060d628c7f03fc725766d8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 392c5b921098bd4c139d9146d0efa6d7 Unity.TextMeshPro.dll:TMPro.TMP_Settings
@@ -168,3 +170,17 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 cf90713cb54fab8f94440a23a0327a01 Assembly-CSharp.dll:.Health
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:ProGrids.pg_IgnoreSnap
+89629ae1315ae9cc0dd2cddf5f26fefb Assembly-CSharp.dll:.pg_SceneMeshRender
+170054f78220cc8fb080da48d76cb77c Assembly-CSharp.dll:.PanelManager
+a729560f7583d3b7946293c2df68e05d Assembly-CSharp.dll:.ResizePanel
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ActiveStateToggler
+350002622c79e1481e16ac72897d455c Assembly-CSharp.dll:.TiltWindow
+3cb945a7574ed3b38d63b4e06537262c Assembly-CSharp.dll:.DropMe
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ShowSliderValue
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DragPanel
+ffa33c85a00f83be514aa40495f1cae2 Assembly-CSharp.dll:.DragMe
+2f48983e1e4572bcddd752423f7dbea2 Assembly-CSharp.dll:.ScrollDetailTexture
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ApplicationManager
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ChangeColor
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LoadSceneOnClick
