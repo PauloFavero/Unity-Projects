@@ -21,7 +21,7 @@ public class Health : NetworkBehaviour {
         if(isLocalPlayer)
         {
             // Set the spawn point to origin as a default value
-            Vector3 spawnPoint = Vector3.zero;
+            Vector3 spawnPoint = new Vector3(0, 1, 0);
 
             // If there is a spawn point array and the array is not empty, pick a spawn point at random
             if (spawnPoints != null && spawnPoints.Length > 0)

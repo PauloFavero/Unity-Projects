@@ -251,8 +251,6 @@
 /Users/paulohenriquefaveropereira/Desktop/Multiplayer War/obj/Debug/Assembly-CSharp.pdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.dll
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.pdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Boo.Lang.dll
@@ -500,6 +498,5 @@
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Unity.IvyParser.dll.mdb
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.csproj.CopyComplete
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.dll
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.dll.mdb
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/UnityEditor.UI.xml
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.dll
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.pdb
