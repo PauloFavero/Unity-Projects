@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
-public class characterSelection : MonoBehaviour {
+public class characterSelection : MonoBehaviour{
 
     private GameObject[] avatars;
     private bool isLeft;
@@ -11,21 +12,23 @@ public class characterSelection : MonoBehaviour {
 
     private void Start()
     {
-        //Transform child counts the number of childs in
-        //the variable  and resizes it automaticaly
-        avatars = new GameObject[transform.childCount];
 
-        index = PlayerPrefs.GetInt("CharacterSelected");
 
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            avatars[i] = transform.GetChild(i).gameObject;
-        }
+            //Transform child counts the number of childs in
+            //the variable  and resizes it automaticaly
+            avatars = new GameObject[transform.childCount];
 
-        foreach(GameObject avatar in avatars)
-        {
-            avatar.SetActive(false);
-        }
+            index = PlayerPrefs.GetInt("CharacterSelected");
+
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                avatars[i] = transform.GetChild(i).gameObject;
+            }
+
+            foreach (GameObject avatar in avatars)
+            {
+                avatar.SetActive(false);
+            }
 
 
     }
@@ -64,7 +67,7 @@ public class characterSelection : MonoBehaviour {
     }
     public void showInitialPlayer(int index)
     {
-        if (avatars[index])
+        if (avatars[index]) 
         {
             avatars[index].SetActive(true);
         }
