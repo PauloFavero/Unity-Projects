@@ -1,10 +1,10 @@
 OSXStandalone
 PlayerPath?
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Build_menu.app
+/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Build.app
 SceneListBegin?
-Assets/mainMenuScene.unity
+Assets/Scenes/mainMenuScene.unity
 Assets/Scenes/Controls.unity
-Assets/Scenes/SampleScene.unity
+Assets/Scenes/Phase1.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -181,6 +181,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LoadSceneOnClick
 2f48983e1e4572bcddd752423f7dbea2 Assembly-CSharp.dll:.ScrollDetailTexture
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.characterSelection
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh

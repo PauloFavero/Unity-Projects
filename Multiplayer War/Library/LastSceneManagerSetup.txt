@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Sci-Fi_Platforms  - 3D_Models/Sci-Fi_Platforms_demo.unity
+- path: Assets/Scenes/mainMenuScene.unity
   isLoaded: 1
   isActive: 1

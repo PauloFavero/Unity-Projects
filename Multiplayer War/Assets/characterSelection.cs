@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
-public class characterSelection : MonoBehaviour{
+public class characterSelection : MonoBehaviour {
 
     private GameObject[] avatars;
     private bool isLeft;
