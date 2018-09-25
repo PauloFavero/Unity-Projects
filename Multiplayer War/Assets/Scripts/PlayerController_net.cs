@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 
-public class PlayerController : NetworkBehaviour {
+public class PlayerController_net : NetworkBehaviour {
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;

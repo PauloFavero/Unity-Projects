@@ -64,6 +64,7 @@
     <Compile Include="Assets\BillboardFirstPerson.cs" />
     <Compile Include="Assets\BillboardThirdPerson.cs" />
     <Compile Include="Assets\characterSelection.cs" />
+    <Compile Include="Assets\ControlPlayer.cs" />
     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
     <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
