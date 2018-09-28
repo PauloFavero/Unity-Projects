@@ -187,6 +187,7 @@ namespace Prototype.NetworkLobby
         {
             playerName = newName;
             nameInput.text = playerName;
+
         }
 
         public void OnMyColor(Color newColor)

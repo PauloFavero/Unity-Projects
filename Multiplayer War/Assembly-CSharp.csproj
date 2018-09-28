@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\NetworkLobbyHook.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController_net.cs" />
     <Compile Include="Assets\Scripts\QuitOnClick.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\setupPlayerNet.cs" />
     <None Include="Assets\NetworkLobby_Third-PartyNotice.txt" />
     <None Include="Assets\3D Models\Props\Weapons\Ammunition\ReadMe.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />

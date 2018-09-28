@@ -8,10 +8,6 @@ public class PlayerController_net : NetworkBehaviour {
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
-
-    [SyncVar]
-    public string playerName;
-
     public LoadSceneOnClick sceneManager;
 
 
@@ -20,6 +16,7 @@ public class PlayerController_net : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //Debug.Log("PLayer Name: " +  playerName);
     }
 
     // Update is called once per frame
@@ -72,10 +69,6 @@ public class PlayerController_net : NetworkBehaviour {
 
     }
 
-    void setPlayerName(string Name){
-
-       
-    }
-
+   
 }
 
