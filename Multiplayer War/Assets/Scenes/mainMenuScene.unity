@@ -3122,26 +3122,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 102642212220292328, guid: 53043668c9d3e45bba3c52e2983b5f18,
-        type: 2}
-      propertyPath: m_Text
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 114042451946316782, guid: 53043668c9d3e45bba3c52e2983b5f18,
-        type: 2}
-      propertyPath: playerColor.r
-      value: 0.9843138
-      objectReference: {fileID: 0}
-    - target: {fileID: 114042451946316782, guid: 53043668c9d3e45bba3c52e2983b5f18,
-        type: 2}
-      propertyPath: playerColor.g
-      value: 0.58431375
-      objectReference: {fileID: 0}
-    - target: {fileID: 114042451946316782, guid: 53043668c9d3e45bba3c52e2983b5f18,
-        type: 2}
-      propertyPath: playerColor.b
-      value: 0.38431376
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53043668c9d3e45bba3c52e2983b5f18, type: 2}
   m_IsPrefabAsset: 0
