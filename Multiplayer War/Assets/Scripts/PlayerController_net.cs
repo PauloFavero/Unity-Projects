@@ -10,20 +10,13 @@ public class PlayerController_net : NetworkBehaviour {
     public Transform bulletSpawn;
     public LoadSceneOnClick sceneManager;
 
-    static Animator anim;
-
-
 
 
 
 	// Use this for initialization
 	void Start () {
 
-            //Debug.Log("PLayer Name: " +  playerName);
-            anim = GetComponent<Animator>();
-
-            if (anim == null)
-                Debug.Log("anim nula");
+        //Debug.Log("PLayer Name: " +  playerName);
     }
 
     // Update is called once per frame
@@ -32,55 +25,22 @@ public class PlayerController_net : NetworkBehaviour {
 
         if (isLocalPlayer)
         {
-
             //Fire 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 CmdFire();
-                anim.SetBool("isAttacking",true);
-                anim.SetBool("isIdle", false);
-                anim.SetBool("isWalking", false);
-                
-
             }
             //Pause Game
             if (Input.GetKeyDown(KeyCode.P))
             {
                 Application.LoadLevel("mainMenuScene");
             }
-            if ((Input.GetKeyDown(KeyCode.W)) ||  (Input.GetKeyDown(KeyCode.S)))
-            {
-                anim.SetBool("isAttacking", false);
-                anim.SetBool("isIdle", false);
-                anim.SetBool("isWalking", true);
-            }
-            if ((Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.D)))
-            {
-                anim.SetBool("isAttacking", false);
-                anim.SetBool("isIdle", false);
-                anim.SetBool("isWalking", true);
-            }
-           
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-
-                this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up*20.0f, ForceMode.Impulse);
-
-            }
-                else{
-
-                //anim.SetBool("isAttacking", false);
-                //anim.SetBool("isIdle", true);
-                //anim.SetBool("IsWalking", false);
-            }
-
-            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 100.0f;
-            var z = Input.GetAxis("Vertical") * Time.deltaTime * 7.0f;
+        
+            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 200.0f;
+            var z = Input.GetAxis("Vertical") * Time.deltaTime * 5.0f;
 
             transform.Rotate(0, x, 0);
             transform.Translate(0, 0, z);
-  
-           
 
         }
     }
@@ -99,7 +59,7 @@ public class PlayerController_net : NetworkBehaviour {
         var bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
         //Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 10;
 
         //Spawn the bullets on the clients
         NetworkServer.Spawn(bullet);
