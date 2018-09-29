@@ -65,6 +65,7 @@
     <Compile Include="Assets\BillboardThirdPerson.cs" />
     <Compile Include="Assets\characterSelection.cs" />
     <Compile Include="Assets\ControlPlayer.cs" />
+    <Compile Include="Assets\ExitController.cs" />
     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
     <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\SciFi_Door\Script\door.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
@@ -109,6 +111,7 @@
     <None Include="Assets\Fonts\OpenSans\FontLicense.txt" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\Beretta 93R\Read_me.txt" />
+    <None Include="Assets\SciFi_Door\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -355,6 +358,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CD98D347-C48E-381A-434F-5BE8A2B767BA}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

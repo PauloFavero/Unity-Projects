@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 114042451946316782}
   - component: {fileID: 95827200968744158}
   - component: {fileID: 114269178731783484}
+  - component: {fileID: 114375740042818500}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1022,6 +1023,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114375740042818500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621078871554770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89e15367ac647bbbbb6bf7e53a8b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 1402765535315232, guid: e6c16d27981294a549ba26c9724d5edc, type: 2}
+  Buttons:
+  - {fileID: 1647019151130888, guid: 77ae2ddb3f05249618a4b790e0a25fd5, type: 2}
+  - {fileID: 1415827779531324, guid: 94b8b3f094b1242869c955ffb5300fc5, type: 2}
+  doorIsClosed: 0
 --- !u!114 &114410766960924984
 MonoBehaviour:
   m_ObjectHideFlags: 1
