@@ -3,6 +3,7 @@ using System.Collections;
 
 public class door : MonoBehaviour {
 	GameObject thedoor;
+    GameObject[] buttons;
 
 void OnTriggerEnter ( Collider obj  ){
 	thedoor= GameObject.FindWithTag("SF_Door");
