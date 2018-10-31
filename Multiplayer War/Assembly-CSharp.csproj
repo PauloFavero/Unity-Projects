@@ -67,6 +67,7 @@
     <Compile Include="Assets\characterSelection.cs" />
     <Compile Include="Assets\ControlPlayer.cs" />
     <Compile Include="Assets\ExitController.cs" />
+    <Compile Include="Assets\gunSound.cs" />
     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
     <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\playerSounds.cs" />
     <Compile Include="Assets\SciFi_Door\Script\door.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
