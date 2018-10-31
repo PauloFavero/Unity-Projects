@@ -3620,7 +3620,7 @@ Prefab:
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_SpawnPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 1873944526002036, guid: 8e9e0a5f8f7134d02ae3dee4c95913b8,
+      objectReference: {fileID: 1199519551576222, guid: 4b735860a0c7b44c59996d6d0d8bb262,
         type: 2}
     - target: {fileID: 11480484, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3646,6 +3646,11 @@ Prefab:
       propertyPath: prematchCountdown
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_GamePlayerPrefab
+      value: 
+      objectReference: {fileID: 1575257536199786, guid: 0e0cd5a4787624e8e8f908f98ed6c664,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
   m_IsPrefabAsset: 0

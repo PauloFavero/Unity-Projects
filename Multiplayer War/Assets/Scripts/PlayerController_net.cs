@@ -31,7 +31,7 @@ public class PlayerController_net : NetworkBehaviour {
         if (isLocalPlayer)
         {
             //Fire 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 CmdFire();
                 anim.SetBool("isAttacking", true);
@@ -39,20 +39,37 @@ public class PlayerController_net : NetworkBehaviour {
                 anim.SetBool("isWalking", false);
             }
             //Pause Game
-            if (Input.GetKeyDown(KeyCode.P))
+            else if (Input.GetKeyDown(KeyCode.P))
             {
                 Application.LoadLevel("mainMenuScene");
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.Space))
             {
                 this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 20.0f, ForceMode.Impulse);
                 Debug.Log("Jump: ");
             }
-            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 100.0f;
-            var z = Input.GetAxis("Vertical") * Time.deltaTime * 7.0f;
+            else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.D))
+            {
+                var x = Input.GetAxis("Horizontal") * Time.deltaTime * 100.0f;
+                var z = Input.GetAxis("Vertical") * Time.deltaTime * 7.0f;
+                anim.SetBool("isAttacking", false);
+                anim.SetBool("isWalking", true);
+                anim.SetBool("isIdle", false);
+                transform.Rotate(0, x, 0);
+                transform.Translate(0, 0, z);
+            }
+            else{
+                anim.SetBool("isAttacking", false);
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isIdle", true);
+            }
 
-            transform.Rotate(0, x, 0);
-            transform.Translate(0, 0, z);
+            //var x = Input.GetAxis("Horizontal") * Time.deltaTime * 100.0f;
+            //var z = Input.GetAxis("Vertical") * Time.deltaTime * 7.0f;
+
+
+            //transform.Rotate(0, x, 0);
+            //transform.Translate(0, 0, z);
 
         }
     }
@@ -71,7 +88,7 @@ public class PlayerController_net : NetworkBehaviour {
         var bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
         //Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.up * 20;
 
         //Spawn the bullets on the clients
         NetworkServer.Spawn(bullet);
@@ -86,7 +103,7 @@ public class PlayerController_net : NetworkBehaviour {
         var objectCol = collision.gameObject;
         var button = objectCol.GetComponent<buttonContact>();
         var treasure = objectCol.GetComponent<treasure>();
-        Debug.Log("Treasure : " + treasure.name);
+
         if (button != null)
         {
             button.buttonPressed = true;
@@ -94,7 +111,6 @@ public class PlayerController_net : NetworkBehaviour {
 
         if (treasure != null)
         {
-            Debug.Log("If set true: " + treasure.name);
             treasure.collided = true;
         }
 
@@ -123,6 +139,7 @@ public class PlayerController_net : NetworkBehaviour {
         if (treasure != null)
         {
             treasure.collided = false;
+            treasure.isClosed = true;
         }
     }
 
