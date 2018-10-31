@@ -15,32 +15,18 @@ public class ExitController : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-    
+        var b1 = Buttons[0].GetComponent<buttonContact>().buttonPressed;
+        var b2 = Buttons[1].GetComponent<buttonContact>().buttonPressed;
 
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-
-        if (collision.contacts.Equals(Buttons[0]) && collision.contacts.Equals(Buttons[1]))
-        {
+        if (b1 && b2 && doorIsClosed){
+            doorIsClosed = false;
             door.GetComponent<Animation>().Play("open");
         }
-
+        //else if (!doorIsClosed ){
+        //    doorIsClosed = true;
+        //    door.GetComponent<Animation>().Play("close");
+        //}
     }
-
-    private void OnCollisionExit(Collision collision)
-    {
-            if (collision.contacts.Equals(Buttons[0]) || collision.contacts.Equals(Buttons[1]))
-        {
-            door.GetComponent<Animation>().Play("close");
-        }
-    }
-
 
 }

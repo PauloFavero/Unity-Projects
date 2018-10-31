@@ -81,6 +81,50 @@ public class PlayerController_net : NetworkBehaviour {
 
     }
 
-   
+    private void OnCollisionEnter(Collision collision)
+    {
+        var objectCol = collision.gameObject;
+        var button = objectCol.GetComponent<buttonContact>();
+        var treasure = objectCol.GetComponent<treasure>();
+        Debug.Log("Treasure : " + treasure.name);
+        if (button != null)
+        {
+            button.buttonPressed = true;
+        }
+
+        if (treasure != null)
+        {
+            Debug.Log("If set true: " + treasure.name);
+            treasure.collided = true;
+        }
+
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        var objectCol = collision.gameObject;
+        var button = objectCol.GetComponent<buttonContact>();
+        if (button != null){
+            button.buttonPressed = true;
+        }
+
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+
+        var objectCol = collision.gameObject;
+        var button = objectCol.GetComponent<buttonContact>();
+        var treasure = objectCol.GetComponent<treasure>();
+        if (button != null)
+        {
+            button.buttonPressed = false;
+        }
+
+        if (treasure != null)
+        {
+            treasure.collided = false;
+        }
+    }
+
 }
 

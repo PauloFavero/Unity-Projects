@@ -500,4 +500,3 @@
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.dll
 /Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/obj/Debug/Assembly-CSharp.pdb
-/Users/paulohenriquefaveropereira/Desktop/GitHub/Unity Projects/Multiplayer War/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb

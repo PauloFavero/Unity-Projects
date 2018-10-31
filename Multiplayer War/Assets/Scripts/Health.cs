@@ -61,10 +61,7 @@ public class Health : NetworkBehaviour {
                     RpcRespawn();
                     Debug.Log("Dead!");
                 }
-               
             }
-
-          
         }
     }
     void OnChangeHealth(int health)

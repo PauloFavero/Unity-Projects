@@ -105,6 +105,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+4d20973fb6ce5b827d489b69d61f5573 Assembly-CSharp.dll:.ExitController
 66b3109aa5921cf800bec17926c6adba Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 552aa97e81ba32370acc474e0860e207 Assembly-CSharp.dll:.BillboardFirstPerson
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -198,9 +199,9 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Prototype.NetworkLobby.DraggablePanel
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.door
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ApplicationManager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ChangeColor
 ba00c26d46eb27902b95b03117b85877 Assembly-CSharp.dll:Prototype.NetworkLobby.LobbyServerList
 cf90713cb54fab8f94440a23a0327a01 Assembly-CSharp.dll:.Health
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.door
-4d20973fb6ce5b827d489b69d61f5573 Assembly-CSharp.dll:.ExitController
+3fac82c279849a1365725937b4161341 Assembly-CSharp.dll:.buttonContact

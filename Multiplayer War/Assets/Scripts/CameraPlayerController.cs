@@ -63,8 +63,9 @@ public class CameraPlayerController : NetworkBehaviour
                     Debug.Log("Camera with name: " + cameras[currentCameraIndex].name + ", is now enabled");
                 }
             }
+            setHUD(cameras[currentCameraIndex].name);
         }
-        setHUD(cameras[currentCameraIndex].name);
+
     }
 
     public override void OnStartLocalPlayer()
