@@ -9,9 +9,10 @@ public class PlayerController_net : NetworkBehaviour {
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     public LoadSceneOnClick sceneManager;
-    static Animator anim;
+    static NetworkAnimator anim;
     public bool isOnGround = true;
-    public AudioSource jumpSound; 
+    public AudioSource jumpSound;
+    public AudioSource walkSound;
 
 
     // Use this for initialization 
@@ -19,7 +20,7 @@ public class PlayerController_net : NetworkBehaviour {
     {
 
         //Debug.Log("PLayer Name: " +  playerName);
-        anim = GetComponent<Animator>();
+        anim = GetComponent<NetworkAnimator>();
         if (anim == null)
             Debug.Log("anim nula");
     }
@@ -52,7 +53,8 @@ public class PlayerController_net : NetworkBehaviour {
             }
             else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.D))
             {
-            
+                if(!walkSound.isPlaying)
+                    walkSound.PlayOneShot(walkSound.clip);
                 anim.SetTrigger("walk");
 
             }

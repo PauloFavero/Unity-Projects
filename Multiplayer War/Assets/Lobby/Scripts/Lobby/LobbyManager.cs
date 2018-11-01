@@ -26,6 +26,8 @@ namespace Prototype.NetworkLobby
 
         public RectTransform mainMenuPanel;
         public RectTransform lobbyPanel;
+        public int chosenCharacter = 0;
+        public GameObject[] characters;
 
         public LobbyInfoPanel infoPanel;
         public LobbyCountdownPanel countdownPanel;

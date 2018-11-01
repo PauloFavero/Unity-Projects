@@ -63,6 +63,7 @@ public class Health : NetworkBehaviour {
                 {
                     currentHealth = maxHealth;
                     RpcRespawn();
+                    audiosource.PlayOneShot(playerPrefab.GetComponent<AudioSource>().clip);
                     Debug.Log("Dead!");
                 }
             }
