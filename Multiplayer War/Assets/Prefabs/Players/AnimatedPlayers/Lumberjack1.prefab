@@ -1798,6 +1798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 224334056267921162}
   destroyOnDeath: 1
+  audiosource: {fileID: 0}
+  playerPrefab: {fileID: 1199519551576222}
   currentHealth: 100
 --- !u!114 &114035735104689088
 MonoBehaviour:

@@ -13,6 +13,7 @@ public class PlayerController_net : NetworkBehaviour {
     public bool isOnGround = true;
     public AudioSource jumpSound;
     public AudioSource walkSound;
+    public AudioSource shootSound;
 
 
     // Use this for initialization 
@@ -37,6 +38,9 @@ public class PlayerController_net : NetworkBehaviour {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 CmdFire();
+                if (walkSound.isPlaying)
+                    walkSound.Stop();
+                shootSound.PlayOneShot(shootSound.clip);
                 anim.SetTrigger("attack");
             }
             //Pause Game
@@ -46,10 +50,15 @@ public class PlayerController_net : NetworkBehaviour {
             }
             else if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
             {
+                if (walkSound.isPlaying)
+                    walkSound.Stop();
+
                 this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 50.0f, ForceMode.Impulse);
                 Debug.Log("Jump: ");
+                anim.SetTrigger("idle");
                 jumpSound.PlayOneShot(jumpSound.clip);
                 isOnGround = false;
+
             }
             else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.D))
             {
@@ -60,6 +69,9 @@ public class PlayerController_net : NetworkBehaviour {
             }
             else{
                 anim.SetTrigger("idle");
+                if (walkSound.isPlaying)
+                    walkSound.Stop();
+
             }
 
             var x = Input.GetAxis("Horizontal") * Time.deltaTime * 100.0f;

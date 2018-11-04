@@ -51,7 +51,6 @@ public class CameraPlayerController : NetworkBehaviour
                 {
                     cameras[currentCameraIndex - 1].gameObject.SetActive(false);
                     cameras[currentCameraIndex].gameObject.SetActive(true);
-                    setHUD(cameras[currentCameraIndex].name);
                     Debug.Log("Camera with name: " + cameras[currentCameraIndex].name + ", is now enabled");
                 }
                 else
@@ -59,12 +58,15 @@ public class CameraPlayerController : NetworkBehaviour
                     cameras[currentCameraIndex - 1].gameObject.SetActive(false);
                     currentCameraIndex = 0;
                     cameras[currentCameraIndex].gameObject.SetActive(true);
-                    setHUD(cameras[currentCameraIndex].name);
                     Debug.Log("Camera with name: " + cameras[currentCameraIndex].name + ", is now enabled");
                 }
+
+                setHUD(cameras[currentCameraIndex].name);
             }
-            setHUD(cameras[currentCameraIndex].name);
+           
         }
+
+
 
     }
 
@@ -74,8 +76,10 @@ public class CameraPlayerController : NetworkBehaviour
     }
     public void setHUD(string cameraName)
     {
+        Debug.Log(cameraName);
         switch (cameraName)
         {
+
             case "FirstPerson":
                 HUDFirstPerson.GetComponent<Canvas>().enabled = true;
                 HUDThirdPerson.GetComponent<Canvas>().enabled = false;

@@ -10,7 +10,6 @@ public class setupPlayerNet : NetworkBehaviour {
 
     [SyncVar]
     public Color playerColor = Color.white;
-
     public void OnGUI()
     {
         if(isLocalPlayer)
@@ -50,7 +49,6 @@ public class setupPlayerNet : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         this.GetComponentInChildren<TextMesh>().text = playerName;
 	}
 }

@@ -10,8 +10,9 @@ public class Health : NetworkBehaviour {
     public RectTransform healthBar;
     public bool destroyOnDeath;
     private NetworkStartPosition[] spawnPoints;
-    public AudioSource audiosource;
-    public GameObject playerPrefab;
+    public AudioSource hitAudio;
+    public AudioSource deathAudio;
+
 
     [SyncVar(hook = "OnChangeHealth")]
     public int currentHealth = maxHealth;
@@ -47,8 +48,7 @@ public class Health : NetworkBehaviour {
         if (isServer)
         {
             currentHealth -= amount;
-            audiosource = playerPrefab.GetComponent<AudioSource>();
-            audiosource.PlayOneShot(playerPrefab.GetComponent<AudioSource>().clip);
+            hitAudio.PlayOneShot(hitAudio.clip);
             Debug.Log("Hit!");
 
             if (currentHealth <= 0)
@@ -56,14 +56,14 @@ public class Health : NetworkBehaviour {
 
                 if (destroyOnDeath)
                 {
-
-                    Destroy(gameObject);
+                    deathAudio.PlayOneShot(deathAudio.clip);             
+                    Destroy(gameObject, deathAudio.clip.length);
                 }
                 else
                 {
+                    deathAudio.PlayOneShot(deathAudio.clip);
                     currentHealth = maxHealth;
                     RpcRespawn();
-                    audiosource.PlayOneShot(playerPrefab.GetComponent<AudioSource>().clip);
                     Debug.Log("Dead!");
                 }
             }
